@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector de Color RGB</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 text-center">Selector de Color RGB</h1>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="colorPicker">Seleccionar Color</label>
+            <input type="color" id="colorPicker" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="redInput">Rojo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="redInput"
+              placeholder="Valor RGB (0-255)"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="greenInput">Verde</label>
+            <input
+              type="text"
+              class="form-control"
+              id="greenInput"
+              placeholder="Valor RGB (0-255)"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="blueInput">Azul</label>
+            <input
+              type="text"
+              class="form-control"
+              id="blueInput"
+              placeholder="Valor RGB (0-255)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <h2 class="text-center">Tonalidad RGB:</h2>
+          <div id="colorBox" class="color-box mx-auto"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <h2 class="text-center">Código Hexadecimal:</h2>
+          <div id="hexCode" class="text-center"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
